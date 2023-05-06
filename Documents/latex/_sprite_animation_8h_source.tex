@@ -1,0 +1,23 @@
+\hypertarget{_sprite_animation_8h_source}{}\doxysection{Sprite\+Animation.\+h}
+\mbox{\hyperlink{_sprite_animation_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}SDL.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_animation_8h}{Animation.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sprite_animation}{SpriteAnimation}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_animation}{Animation}}}
+\DoxyCodeLine{00010\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_sprite_animation}{SpriteAnimation}}(\textcolor{keywordtype}{bool}\ repeat\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_animation_aac0e1143b69ddbb8b6af2408212d8b3d}{Update}}(\textcolor{keywordtype}{float}\ deltaTime);}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_animation_ad435bc2576fd351b380776cedab517ae}{Draw}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{int}\ spriteWidth,\ \textcolor{keywordtype}{int}\ spriteHeight);}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_animation_a88e85141f488b9a01d911699bfc95ae3}{SetProps}}(std::string\ textureID,\ \textcolor{keywordtype}{int}\ spriteRow,\ \textcolor{keywordtype}{int}\ frameCount,\ \textcolor{keywordtype}{int}\ animSpeed,\ SDL\_RendererFlip\ flip,\ \textcolor{keywordtype}{bool}\ repeat);}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_sprite_animation_a15ac2c629b66e8de852736428b051ddf}{m\_SpriteRow}},\ \mbox{\hyperlink{class_sprite_animation_a10f7011722c0b77913fa69ab10f081fd}{m\_SpriteFrame}},\ \mbox{\hyperlink{class_sprite_animation_aaf8f200a6fd3d9e3b7499aa6973a6e0b}{m\_AnimationSpeed}},\ \mbox{\hyperlink{class_sprite_animation_a98f5f16913dcdb580d6ed5075db04660}{m\_FrameCount}};}
+\DoxyCodeLine{00018\ \ \ \ \ std::string\ \mbox{\hyperlink{class_sprite_animation_a91ed8afa0654ce23f46655ef42405d76}{m\_TextureID}};}
+\DoxyCodeLine{00019\ \ \ \ \ SDL\_RendererFlip\ \mbox{\hyperlink{class_sprite_animation_a573da9e384055e1b2a195751d8777a33}{m\_Flip}};}
+\DoxyCodeLine{00020\ \};}
+\DoxyCodeLine{00021\ }
+
+\end{DoxyCode}

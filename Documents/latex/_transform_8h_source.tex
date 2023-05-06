@@ -1,0 +1,20 @@
+\hypertarget{_transform_8h_source}{}\doxysection{Transform.\+h}
+\mbox{\hyperlink{_transform_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_vector2_d_8h}{Vector2D.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_transform}{Transform}}}
+\DoxyCodeLine{00006\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_transform_af2d954f4302025bce8458e49ec9b1a08}{X}},\ \mbox{\hyperlink{class_transform_a21861f793de18a2b76cd0ebf4df87eef}{Y}};}
+\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{class_transform_ae45ac86e48a4d09f1cc741c6075c7cba}{Transform}}(\textcolor{keywordtype}{float}\ x\ =\ 0,\ \textcolor{keywordtype}{float}\ y\ =\ 0)\ :\ \mbox{\hyperlink{class_transform_af2d954f4302025bce8458e49ec9b1a08}{X}}(x),\ \mbox{\hyperlink{class_transform_a21861f793de18a2b76cd0ebf4df87eef}{Y}}(y)\ \{\}}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_transform_a33652733acaf849f8f2483e2ae47d074}{Log}}(std::string\ mag\ =\ \textcolor{stringliteral}{"{}"{}})\ \{\ std::cout\ <<\ mag\ <<\ \textcolor{stringliteral}{"{}X\ Y\ =\ "{}}\ <<\ \mbox{\hyperlink{class_transform_af2d954f4302025bce8458e49ec9b1a08}{X}}\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ \mbox{\hyperlink{class_transform_a21861f793de18a2b76cd0ebf4df87eef}{Y}}\ <<\ std::endl;\ \}}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_transform_ad865b5ed518db82ef34b46a85f9be2f3}{TranslateX}}(\textcolor{keywordtype}{float}\ x)\ \{\ \mbox{\hyperlink{class_transform_af2d954f4302025bce8458e49ec9b1a08}{X}}\ +=\ x;\ \}}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_transform_aab84c66cf919f3335de55280a4826843}{TranslateY}}(\textcolor{keywordtype}{float}\ y)\ \{\ \mbox{\hyperlink{class_transform_a21861f793de18a2b76cd0ebf4df87eef}{Y}}\ +=\ y;\ \}}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_transform_a910705819141a9a2b8b2582ded2425ed}{Translate}}(\mbox{\hyperlink{class_vector2_d}{Vector2D}}\ v)\ \{\ \mbox{\hyperlink{class_transform_af2d954f4302025bce8458e49ec9b1a08}{X}}\ +=\ v.\mbox{\hyperlink{class_vector2_d_ad5053de07ddfbb1d38b55fce7f271ff5}{X}};\ \mbox{\hyperlink{class_transform_a21861f793de18a2b76cd0ebf4df87eef}{Y}}\ +=\ v.\mbox{\hyperlink{class_vector2_d_adad18acabf7238660d50f5e9ceb01c7c}{Y}};\ \}}
+\DoxyCodeLine{00014\ \};}
+\DoxyCodeLine{00015\ }
+
+\end{DoxyCode}

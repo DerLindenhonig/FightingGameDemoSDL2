@@ -1,0 +1,197 @@
+\hypertarget{class_rigid_body}{}\doxysection{Rigid\+Body Class Reference}
+\label{class_rigid_body}\index{RigidBody@{RigidBody}}
+
+
+{\ttfamily \#include $<$Rigid\+Body.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rigid_body_a28203d38d278da0695ace20c66ee5f0a}{Rigid\+Body}} ()
+\item 
+void \mbox{\hyperlink{class_rigid_body_a647ff00d3d31e01ce3a1bfa6e7a8f8ee}{Set\+Mass}} (float mass)
+\item 
+void \mbox{\hyperlink{class_rigid_body_a657473091ae12d5b03fa56aee5320d5d}{Set\+Gravity}} (float gravity)
+\item 
+void \mbox{\hyperlink{class_rigid_body_a5efe58772198d2881f939fe9654e8075}{Apply\+Force}} (\mbox{\hyperlink{class_vector2_d}{Vector2D}} force)
+\item 
+void \mbox{\hyperlink{class_rigid_body_a5b28e46f3788c25e86612be7bd02d573}{Apply\+ForceX}} (float x)
+\item 
+void \mbox{\hyperlink{class_rigid_body_a96ac0ccc7d98a4b5463fca3bfae39432}{Apply\+ForceY}} (float y)
+\item 
+void \mbox{\hyperlink{class_rigid_body_a56559946c1498a0c24bbdfbade6d5f83}{Unset\+Force}} ()
+\item 
+void \mbox{\hyperlink{class_rigid_body_a11b7181dbee6dfc6646b29becefa5309}{Apply\+Friction}} (\mbox{\hyperlink{class_vector2_d}{Vector2D}} v)
+\item 
+void \mbox{\hyperlink{class_rigid_body_a57db0a562ef23c49c6726ca4592c4912}{Unset\+Friction}} ()
+\item 
+float \mbox{\hyperlink{class_rigid_body_a147130aaeb31d7357cf5c5cec68b6363}{Get\+Mass}} ()
+\item 
+\mbox{\hyperlink{class_vector2_d}{Vector2D}} \mbox{\hyperlink{class_rigid_body_a910ff086a6b7a1af1aee8ad061fd8bab}{Get\+Position}} ()
+\item 
+\mbox{\hyperlink{class_vector2_d}{Vector2D}} \mbox{\hyperlink{class_rigid_body_a01508742619c09a44ba12f474f2f4c9b}{Get\+Velocity}} ()
+\item 
+\mbox{\hyperlink{class_vector2_d}{Vector2D}} \mbox{\hyperlink{class_rigid_body_a25cde5700b1baa6dbfe4795ddeb6a873}{Get\+Accelaration}} ()
+\item 
+void \mbox{\hyperlink{class_rigid_body_a3beba060c7be720d24f9e3ad9044598a}{Update}} (float delta\+Time)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_rigid_body_a20f4b72f9c8d04ada9e5da6f064cc546}{m\+\_\+\+Mass}}
+\item 
+float \mbox{\hyperlink{class_rigid_body_ad3bc812cddda0a960c8948512a1410ed}{m\+\_\+\+Gravity}}
+\item 
+\mbox{\hyperlink{class_vector2_d}{Vector2D}} \mbox{\hyperlink{class_rigid_body_adff8c2ed7d2df7f6522b467cabd483a4}{m\+\_\+\+Force}}
+\item 
+\mbox{\hyperlink{class_vector2_d}{Vector2D}} \mbox{\hyperlink{class_rigid_body_ad6d0f5eed9a34b941e7cafde75b71163}{m\+\_\+\+Friction}}
+\item 
+\mbox{\hyperlink{class_vector2_d}{Vector2D}} \mbox{\hyperlink{class_rigid_body_a0e5b1ba3ff01db602074f00694dbe0d7}{m\+\_\+\+Position}}
+\item 
+\mbox{\hyperlink{class_vector2_d}{Vector2D}} \mbox{\hyperlink{class_rigid_body_a89aa6519b4a02da8f7e2064b2d99ac8f}{m\+\_\+\+Velocity}}
+\item 
+\mbox{\hyperlink{class_vector2_d}{Vector2D}} \mbox{\hyperlink{class_rigid_body_ab4586c7a932ad9f48b260f505141f179}{m\+\_\+\+Accelaration}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Rigidbody class handle physics of the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_rigid_body_a28203d38d278da0695ace20c66ee5f0a}\label{class_rigid_body_a28203d38d278da0695ace20c66ee5f0a}} 
+\index{RigidBody@{RigidBody}!RigidBody@{RigidBody}}
+\index{RigidBody@{RigidBody}!RigidBody@{RigidBody}}
+\doxysubsubsection{\texorpdfstring{RigidBody()}{RigidBody()}}
+{\footnotesize\ttfamily Rigid\+Body\+::\+Rigid\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rigid_body_a5efe58772198d2881f939fe9654e8075}\label{class_rigid_body_a5efe58772198d2881f939fe9654e8075}} 
+\index{RigidBody@{RigidBody}!ApplyForce@{ApplyForce}}
+\index{ApplyForce@{ApplyForce}!RigidBody@{RigidBody}}
+\doxysubsubsection{\texorpdfstring{ApplyForce()}{ApplyForce()}}
+{\footnotesize\ttfamily void Rigid\+Body\+::\+Apply\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector2_d}{Vector2D}}}]{force }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_rigid_body_a5b28e46f3788c25e86612be7bd02d573}\label{class_rigid_body_a5b28e46f3788c25e86612be7bd02d573}} 
+\index{RigidBody@{RigidBody}!ApplyForceX@{ApplyForceX}}
+\index{ApplyForceX@{ApplyForceX}!RigidBody@{RigidBody}}
+\doxysubsubsection{\texorpdfstring{ApplyForceX()}{ApplyForceX()}}
+{\footnotesize\ttfamily void Rigid\+Body\+::\+Apply\+ForceX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_rigid_body_a96ac0ccc7d98a4b5463fca3bfae39432}\label{class_rigid_body_a96ac0ccc7d98a4b5463fca3bfae39432}} 
+\index{RigidBody@{RigidBody}!ApplyForceY@{ApplyForceY}}
+\index{ApplyForceY@{ApplyForceY}!RigidBody@{RigidBody}}
+\doxysubsubsection{\texorpdfstring{ApplyForceY()}{ApplyForceY()}}
+{\footnotesize\ttfamily void Rigid\+Body\+::\+Apply\+ForceY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_rigid_body_a11b7181dbee6dfc6646b29becefa5309}\label{class_rigid_body_a11b7181dbee6dfc6646b29becefa5309}} 
+\index{RigidBody@{RigidBody}!ApplyFriction@{ApplyFriction}}
+\index{ApplyFriction@{ApplyFriction}!RigidBody@{RigidBody}}
+\doxysubsubsection{\texorpdfstring{ApplyFriction()}{ApplyFriction()}}
+{\footnotesize\ttfamily void Rigid\+Body\+::\+Apply\+Friction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector2_d}{Vector2D}}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_rigid_body_a25cde5700b1baa6dbfe4795ddeb6a873}\label{class_rigid_body_a25cde5700b1baa6dbfe4795ddeb6a873}} 
+\index{RigidBody@{RigidBody}!GetAccelaration@{GetAccelaration}}
+\index{GetAccelaration@{GetAccelaration}!RigidBody@{RigidBody}}
+\doxysubsubsection{\texorpdfstring{GetAccelaration()}{GetAccelaration()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector2_d}{Vector2D}} Rigid\+Body\+::\+Get\+Accelaration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_rigid_body_a147130aaeb31d7357cf5c5cec68b6363}\label{class_rigid_body_a147130aaeb31d7357cf5c5cec68b6363}} 
+\index{RigidBody@{RigidBody}!GetMass@{GetMass}}
+\index{GetMass@{GetMass}!RigidBody@{RigidBody}}
+\doxysubsubsection{\texorpdfstring{GetMass()}{GetMass()}}
+{\footnotesize\ttfamily float Rigid\+Body\+::\+Get\+Mass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_rigid_body_a910ff086a6b7a1af1aee8ad061fd8bab}\label{class_rigid_body_a910ff086a6b7a1af1aee8ad061fd8bab}} 
+\index{RigidBody@{RigidBody}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!RigidBody@{RigidBody}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector2_d}{Vector2D}} Rigid\+Body\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_rigid_body_a01508742619c09a44ba12f474f2f4c9b}\label{class_rigid_body_a01508742619c09a44ba12f474f2f4c9b}} 
+\index{RigidBody@{RigidBody}!GetVelocity@{GetVelocity}}
+\index{GetVelocity@{GetVelocity}!RigidBody@{RigidBody}}
+\doxysubsubsection{\texorpdfstring{GetVelocity()}{GetVelocity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector2_d}{Vector2D}} Rigid\+Body\+::\+Get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_rigid_body_a657473091ae12d5b03fa56aee5320d5d}\label{class_rigid_body_a657473091ae12d5b03fa56aee5320d5d}} 
+\index{RigidBody@{RigidBody}!SetGravity@{SetGravity}}
+\index{SetGravity@{SetGravity}!RigidBody@{RigidBody}}
+\doxysubsubsection{\texorpdfstring{SetGravity()}{SetGravity()}}
+{\footnotesize\ttfamily void Rigid\+Body\+::\+Set\+Gravity (\begin{DoxyParamCaption}\item[{float}]{gravity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_rigid_body_a647ff00d3d31e01ce3a1bfa6e7a8f8ee}\label{class_rigid_body_a647ff00d3d31e01ce3a1bfa6e7a8f8ee}} 
+\index{RigidBody@{RigidBody}!SetMass@{SetMass}}
+\index{SetMass@{SetMass}!RigidBody@{RigidBody}}
+\doxysubsubsection{\texorpdfstring{SetMass()}{SetMass()}}
+{\footnotesize\ttfamily void Rigid\+Body\+::\+Set\+Mass (\begin{DoxyParamCaption}\item[{float}]{mass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_rigid_body_a56559946c1498a0c24bbdfbade6d5f83}\label{class_rigid_body_a56559946c1498a0c24bbdfbade6d5f83}} 
+\index{RigidBody@{RigidBody}!UnsetForce@{UnsetForce}}
+\index{UnsetForce@{UnsetForce}!RigidBody@{RigidBody}}
+\doxysubsubsection{\texorpdfstring{UnsetForce()}{UnsetForce()}}
+{\footnotesize\ttfamily void Rigid\+Body\+::\+Unset\+Force (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_rigid_body_a57db0a562ef23c49c6726ca4592c4912}\label{class_rigid_body_a57db0a562ef23c49c6726ca4592c4912}} 
+\index{RigidBody@{RigidBody}!UnsetFriction@{UnsetFriction}}
+\index{UnsetFriction@{UnsetFriction}!RigidBody@{RigidBody}}
+\doxysubsubsection{\texorpdfstring{UnsetFriction()}{UnsetFriction()}}
+{\footnotesize\ttfamily void Rigid\+Body\+::\+Unset\+Friction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_rigid_body_a3beba060c7be720d24f9e3ad9044598a}\label{class_rigid_body_a3beba060c7be720d24f9e3ad9044598a}} 
+\index{RigidBody@{RigidBody}!Update@{Update}}
+\index{Update@{Update}!RigidBody@{RigidBody}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Rigid\+Body\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_rigid_body_ab4586c7a932ad9f48b260f505141f179}\label{class_rigid_body_ab4586c7a932ad9f48b260f505141f179}} 
+\index{RigidBody@{RigidBody}!m\_Accelaration@{m\_Accelaration}}
+\index{m\_Accelaration@{m\_Accelaration}!RigidBody@{RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_Accelaration}{m\_Accelaration}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector2_d}{Vector2D}} Rigid\+Body\+::m\+\_\+\+Accelaration\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rigid_body_adff8c2ed7d2df7f6522b467cabd483a4}\label{class_rigid_body_adff8c2ed7d2df7f6522b467cabd483a4}} 
+\index{RigidBody@{RigidBody}!m\_Force@{m\_Force}}
+\index{m\_Force@{m\_Force}!RigidBody@{RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_Force}{m\_Force}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector2_d}{Vector2D}} Rigid\+Body\+::m\+\_\+\+Force\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rigid_body_ad6d0f5eed9a34b941e7cafde75b71163}\label{class_rigid_body_ad6d0f5eed9a34b941e7cafde75b71163}} 
+\index{RigidBody@{RigidBody}!m\_Friction@{m\_Friction}}
+\index{m\_Friction@{m\_Friction}!RigidBody@{RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_Friction}{m\_Friction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector2_d}{Vector2D}} Rigid\+Body\+::m\+\_\+\+Friction\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rigid_body_ad3bc812cddda0a960c8948512a1410ed}\label{class_rigid_body_ad3bc812cddda0a960c8948512a1410ed}} 
+\index{RigidBody@{RigidBody}!m\_Gravity@{m\_Gravity}}
+\index{m\_Gravity@{m\_Gravity}!RigidBody@{RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_Gravity}{m\_Gravity}}
+{\footnotesize\ttfamily float Rigid\+Body\+::m\+\_\+\+Gravity\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rigid_body_a20f4b72f9c8d04ada9e5da6f064cc546}\label{class_rigid_body_a20f4b72f9c8d04ada9e5da6f064cc546}} 
+\index{RigidBody@{RigidBody}!m\_Mass@{m\_Mass}}
+\index{m\_Mass@{m\_Mass}!RigidBody@{RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_Mass}{m\_Mass}}
+{\footnotesize\ttfamily float Rigid\+Body\+::m\+\_\+\+Mass\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rigid_body_a0e5b1ba3ff01db602074f00694dbe0d7}\label{class_rigid_body_a0e5b1ba3ff01db602074f00694dbe0d7}} 
+\index{RigidBody@{RigidBody}!m\_Position@{m\_Position}}
+\index{m\_Position@{m\_Position}!RigidBody@{RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_Position}{m\_Position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector2_d}{Vector2D}} Rigid\+Body\+::m\+\_\+\+Position\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rigid_body_a89aa6519b4a02da8f7e2064b2d99ac8f}\label{class_rigid_body_a89aa6519b4a02da8f7e2064b2d99ac8f}} 
+\index{RigidBody@{RigidBody}!m\_Velocity@{m\_Velocity}}
+\index{m\_Velocity@{m\_Velocity}!RigidBody@{RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_Velocity}{m\_Velocity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector2_d}{Vector2D}} Rigid\+Body\+::m\+\_\+\+Velocity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_rigid_body_8h}{Rigid\+Body.\+h}}\end{DoxyCompactItemize}

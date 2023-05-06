@@ -1,0 +1,21 @@
+\hypertarget{_text_8h_source}{}\doxysection{Text.\+h}
+\mbox{\hyperlink{_text_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <SDL\_ttf.h>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}SDL.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_text}{Text}}}
+\DoxyCodeLine{00010\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_text}{Text}}(SDL\_Renderer*\ renderer,\ \textcolor{keyword}{const}\ std::string\ \&font\_path,\ \textcolor{keywordtype}{int}\ font\_size,\ \textcolor{keyword}{const}\ std::string\ \&message\_text,\ \textcolor{keyword}{const}\ SDL\_Color\ \&color);}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_text_af9adb2121ad725b9dc93d7d18b3ddf97}{Display}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ SDL\_Renderer\ *\ renderer)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{static}\ SDL\_Texture*\ \mbox{\hyperlink{class_text_a3311598d9c84136470f29ffe8b637951}{loadFont}}(SDL\_Renderer*\ renderer,\ \textcolor{keyword}{const}\ std::string\&\ font\_path,\ \textcolor{keywordtype}{int}\ font\_size,\ \textcolor{keyword}{const}\ std::string\&\ message\_text,\ \textcolor{keyword}{const}\ SDL\_Color\&\ color);}
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ \ \ \ \ SDL\_Texture*\ \mbox{\hyperlink{class_text_accd0fd376702f2436809a7f4d3357631}{\_text\_texture}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{mutable}\ SDL\_Rect\ \mbox{\hyperlink{class_text_ab0ff5dc378575b4df542e4b9c2336a5e}{\_text\_rect}};}
+\DoxyCodeLine{00018\ \};}
+\DoxyCodeLine{00019\ }
+
+\end{DoxyCode}

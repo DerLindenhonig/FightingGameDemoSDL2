@@ -1,0 +1,46 @@
+\hypertarget{_game_object_8h_source}{}\doxysection{Game\+Object.\+h}
+\mbox{\hyperlink{_game_object_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_i_object_8h}{IObject.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_transform_8h}{Transform.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}SDL.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_collider_8h}{Collider.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_properties}{Properties}}}
+\DoxyCodeLine{00008\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{struct_properties_a58fcae87708836f4bf488caa3c3d5f47}{Properties}}(std::string\ textureID,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height,\ SDL\_RendererFlip\ flip\ =\ SDL\_FLIP\_NONE)}
+\DoxyCodeLine{00011\ \ \ \ \ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_properties_a23fa8035353e36fc1ec7b456302f7d91}{X}}\ =\ x;}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_properties_afd475e6ccb56d1ecf9fefb1551ea04c0}{Y}}\ =\ y;}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_properties_a75b0d447417a1cb458b8439339360b1f}{Flip}}\ =\ flip;}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_properties_a3326c309527dd351a69b62283eb79ef0}{Width}}\ =\ width;}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_properties_a83ed00336cd2c1371e96d52ad7a6a2a8}{Height}}\ =\ height;}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_properties_a7056363f6e76722f77f5a32bb91f2660}{TextureID}}\ =\ textureID;}
+\DoxyCodeLine{00018\ \ \ \ \ \}}
+\DoxyCodeLine{00019\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_properties_a7056363f6e76722f77f5a32bb91f2660}{TextureID}};}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_properties_a3326c309527dd351a69b62283eb79ef0}{Width}},\ \mbox{\hyperlink{struct_properties_a83ed00336cd2c1371e96d52ad7a6a2a8}{Height}};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_properties_a23fa8035353e36fc1ec7b456302f7d91}{X}},\ \mbox{\hyperlink{struct_properties_afd475e6ccb56d1ecf9fefb1551ea04c0}{Y}};}
+\DoxyCodeLine{00022\ \ \ \ \ SDL\_RendererFlip\ \mbox{\hyperlink{struct_properties_a75b0d447417a1cb458b8439339360b1f}{Flip}};}
+\DoxyCodeLine{00023\ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_object}{GameObject}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i_object}{IObject}}}
+\DoxyCodeLine{00026\ \{}
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//GameObject()\ \{\};}}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_game_object_a67717925b998a6016e461dbfb4dc0f67}{GameObject}}(\mbox{\hyperlink{struct_properties}{Properties}}*\ p)\ :\ \mbox{\hyperlink{class_game_object_a70988d8dea61b34cc13da631027c854c}{m\_TextureID}}(p-\/>TextureID),\ \mbox{\hyperlink{class_game_object_acf4c80d24c44e058c58a5b794dcb4a1e}{m\_Width}}(p-\/>Width),\ \mbox{\hyperlink{class_game_object_a3f6d13efb059e34ac2636889b87c6131}{m\_Height}}(p-\/>Height),\ \mbox{\hyperlink{class_game_object_a6a7526e38efbed145fcbdb388ed6aa49}{m\_Flip}}(p-\/>Flip)}
+\DoxyCodeLine{00030\ \ \ \ \ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_object_adcdfc0a1581d8e8fa2d4c54330aea913}{m\_Transform}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_transform}{Transform}}(p-\/>\mbox{\hyperlink{struct_properties_a23fa8035353e36fc1ec7b456302f7d91}{X}},\ p-\/>\mbox{\hyperlink{struct_properties_afd475e6ccb56d1ecf9fefb1551ea04c0}{Y}});}
+\DoxyCodeLine{00032\ \ \ \ \ \}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_a29a665f46fda87982825bc5c0ca6a888}{Draw}}()\ =\ 0;}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_abf4d53ed5f2d185a58fe0017984c5d3c}{Update}}(\textcolor{keywordtype}{float}\ deltaTime,\ \mbox{\hyperlink{class_collider}{Collider}}*\ collider,\ \textcolor{keywordtype}{bool}\ isGotHit,\ \textcolor{keywordtype}{int}\ health)\ =\ 0;}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_a776971e0c9737717b07f79ee611481f5}{Clean}}()\ =\ 0;}
+\DoxyCodeLine{00036\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_transform}{Transform}}*\ \mbox{\hyperlink{class_game_object_adcdfc0a1581d8e8fa2d4c54330aea913}{m\_Transform}};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_object_acf4c80d24c44e058c58a5b794dcb4a1e}{m\_Width}},\ \mbox{\hyperlink{class_game_object_a3f6d13efb059e34ac2636889b87c6131}{m\_Height}};}
+\DoxyCodeLine{00039\ \ \ \ \ std::string\ \mbox{\hyperlink{class_game_object_a70988d8dea61b34cc13da631027c854c}{m\_TextureID}};}
+\DoxyCodeLine{00040\ \ \ \ \ SDL\_RendererFlip\ \mbox{\hyperlink{class_game_object_a6a7526e38efbed145fcbdb388ed6aa49}{m\_Flip}};}
+\DoxyCodeLine{00041\ \};}
+
+\end{DoxyCode}

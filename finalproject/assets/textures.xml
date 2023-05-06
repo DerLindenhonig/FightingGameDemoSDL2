@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<textures>
+	<texture id="ground" source="assets/ground.png"/>
+	<texture id="character" source="assets/character_animations.png"/>
+	<texture id="healthbar" source="assets/healthbar.png"/>
+	<texture id="health" source="assets/health.png"/>
+</textures>

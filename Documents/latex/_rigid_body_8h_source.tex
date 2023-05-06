@@ -1,0 +1,58 @@
+\hypertarget{_rigid_body_8h_source}{}\doxysection{Rigid\+Body.\+h}
+\mbox{\hyperlink{_rigid_body_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_vector2_d_8h}{Vector2D.h}}"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ UNI\_MASS\ 1.0f}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ GRAVITY\ 10.0f}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ FORWARD\_P1\ 1\ \ \ \ \ \ }\textcolor{comment}{//\ movement\ for\ player\ 1\ (left\ side)}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ BACKWARD\_P1\ -\/1}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ FORWARD\_P2\ 1\ \ \ \ \ \ }\textcolor{comment}{//\ movement\ for\ player\ 2\ (right\ side)}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ BACKWARD\_P2\ -\/1}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ UPWARD\ -\/1\ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ jumping}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ DOWNWARD\ 1}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_rigid_body}{RigidBody}}}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_rigid_body_a28203d38d278da0695ace20c66ee5f0a}{RigidBody}}()\ }
+\DoxyCodeLine{00024\ \ \ \ \ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rigid_body_a20f4b72f9c8d04ada9e5da6f064cc546}{m\_Mass}}\ =\ \mbox{\hyperlink{_rigid_body_8h_a20b68b05092ed16349503bca8ae61d80}{UNI\_MASS}};}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rigid_body_ad3bc812cddda0a960c8948512a1410ed}{m\_Gravity}}\ =\ \mbox{\hyperlink{_rigid_body_8h_a6801baa546c6112d19eb095111d24720}{GRAVITY}};}
+\DoxyCodeLine{00027\ \ \ \ \ \}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_a647ff00d3d31e01ce3a1bfa6e7a8f8ee}{SetMass}}(\textcolor{keywordtype}{float}\ mass)\ \{\ \mbox{\hyperlink{class_rigid_body_a20f4b72f9c8d04ada9e5da6f064cc546}{m\_Mass}}\ =\ mass;\ \}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_a657473091ae12d5b03fa56aee5320d5d}{SetGravity}}(\textcolor{keywordtype}{float}\ gravity)\ \{\ \mbox{\hyperlink{class_rigid_body_ad3bc812cddda0a960c8948512a1410ed}{m\_Gravity}}\ =\ gravity;\ \}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_a5efe58772198d2881f939fe9654e8075}{ApplyForce}}(\mbox{\hyperlink{class_vector2_d}{Vector2D}}\ force)\ \{\ \mbox{\hyperlink{class_rigid_body_adff8c2ed7d2df7f6522b467cabd483a4}{m\_Force}}\ =\ force;\ \}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_a5b28e46f3788c25e86612be7bd02d573}{ApplyForceX}}(\textcolor{keywordtype}{float}\ x)\ \{\ \mbox{\hyperlink{class_rigid_body_adff8c2ed7d2df7f6522b467cabd483a4}{m\_Force}}.\mbox{\hyperlink{class_vector2_d_ad5053de07ddfbb1d38b55fce7f271ff5}{X}}\ =\ x;\ \}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_a96ac0ccc7d98a4b5463fca3bfae39432}{ApplyForceY}}(\textcolor{keywordtype}{float}\ y)\ \{\ \mbox{\hyperlink{class_rigid_body_adff8c2ed7d2df7f6522b467cabd483a4}{m\_Force}}.\mbox{\hyperlink{class_vector2_d_adad18acabf7238660d50f5e9ceb01c7c}{Y}}\ =\ y;\ \}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_a56559946c1498a0c24bbdfbade6d5f83}{UnsetForce}}()\ \{\ \mbox{\hyperlink{class_rigid_body_adff8c2ed7d2df7f6522b467cabd483a4}{m\_Force}}\ =\ \mbox{\hyperlink{class_vector2_d}{Vector2D}}(0,0);\ \}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_a11b7181dbee6dfc6646b29becefa5309}{ApplyFriction}}(\mbox{\hyperlink{class_vector2_d}{Vector2D}}\ v)\ \{\ \mbox{\hyperlink{class_rigid_body_ad6d0f5eed9a34b941e7cafde75b71163}{m\_Friction}}\ =\ v;\ \}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_a57db0a562ef23c49c6726ca4592c4912}{UnsetFriction}}()\ \{\ \mbox{\hyperlink{class_rigid_body_ad6d0f5eed9a34b941e7cafde75b71163}{m\_Friction}}\ =\ \mbox{\hyperlink{class_vector2_d}{Vector2D}}(0,\ 0);\ \}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_rigid_body_a147130aaeb31d7357cf5c5cec68b6363}{GetMass}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_rigid_body_a20f4b72f9c8d04ada9e5da6f064cc546}{m\_Mass}};\ \}}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{class_vector2_d}{Vector2D}}\ \mbox{\hyperlink{class_rigid_body_a910ff086a6b7a1af1aee8ad061fd8bab}{GetPosition}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_rigid_body_a0e5b1ba3ff01db602074f00694dbe0d7}{m\_Position}};\ \}}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{class_vector2_d}{Vector2D}}\ \mbox{\hyperlink{class_rigid_body_a01508742619c09a44ba12f474f2f4c9b}{GetVelocity}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_rigid_body_a89aa6519b4a02da8f7e2064b2d99ac8f}{m\_Velocity}};\ \}}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{class_vector2_d}{Vector2D}}\ \mbox{\hyperlink{class_rigid_body_a25cde5700b1baa6dbfe4795ddeb6a873}{GetAccelaration}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_rigid_body_ab4586c7a932ad9f48b260f505141f179}{m\_Accelaration}};\ \}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rigid_body_a3beba060c7be720d24f9e3ad9044598a}{Update}}(\textcolor{keywordtype}{float}\ deltaTime)}
+\DoxyCodeLine{00046\ \ \ \ \ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rigid_body_ab4586c7a932ad9f48b260f505141f179}{m\_Accelaration}}.\mbox{\hyperlink{class_vector2_d_ad5053de07ddfbb1d38b55fce7f271ff5}{X}}\ =\ (\mbox{\hyperlink{class_rigid_body_adff8c2ed7d2df7f6522b467cabd483a4}{m\_Force}}.\mbox{\hyperlink{class_vector2_d_ad5053de07ddfbb1d38b55fce7f271ff5}{X}}\ +\ \mbox{\hyperlink{class_rigid_body_ad6d0f5eed9a34b941e7cafde75b71163}{m\_Friction}}.\mbox{\hyperlink{class_vector2_d_ad5053de07ddfbb1d38b55fce7f271ff5}{X}})\ /\ \mbox{\hyperlink{class_rigid_body_a20f4b72f9c8d04ada9e5da6f064cc546}{m\_Mass}};}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rigid_body_ab4586c7a932ad9f48b260f505141f179}{m\_Accelaration}}.\mbox{\hyperlink{class_vector2_d_adad18acabf7238660d50f5e9ceb01c7c}{Y}}\ =\ \mbox{\hyperlink{class_rigid_body_ad3bc812cddda0a960c8948512a1410ed}{m\_Gravity}}\ +\ \mbox{\hyperlink{class_rigid_body_adff8c2ed7d2df7f6522b467cabd483a4}{m\_Force}}.\mbox{\hyperlink{class_vector2_d_adad18acabf7238660d50f5e9ceb01c7c}{Y}}\ /\ \mbox{\hyperlink{class_rigid_body_a20f4b72f9c8d04ada9e5da6f064cc546}{m\_Mass}};}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rigid_body_a89aa6519b4a02da8f7e2064b2d99ac8f}{m\_Velocity}}\ =\ \mbox{\hyperlink{class_rigid_body_ab4586c7a932ad9f48b260f505141f179}{m\_Accelaration}}\ *\ deltaTime;}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rigid_body_a0e5b1ba3ff01db602074f00694dbe0d7}{m\_Position}}\ =\ \mbox{\hyperlink{class_rigid_body_a89aa6519b4a02da8f7e2064b2d99ac8f}{m\_Velocity}}\ *\ deltaTime;}
+\DoxyCodeLine{00051\ \ \ \ \ \}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_rigid_body_a20f4b72f9c8d04ada9e5da6f064cc546}{m\_Mass}},\ \mbox{\hyperlink{class_rigid_body_ad3bc812cddda0a960c8948512a1410ed}{m\_Gravity}};}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{class_vector2_d}{Vector2D}}\ \mbox{\hyperlink{class_rigid_body_adff8c2ed7d2df7f6522b467cabd483a4}{m\_Force}},\ \mbox{\hyperlink{class_rigid_body_ad6d0f5eed9a34b941e7cafde75b71163}{m\_Friction}},\ \mbox{\hyperlink{class_rigid_body_a0e5b1ba3ff01db602074f00694dbe0d7}{m\_Position}},\ \mbox{\hyperlink{class_rigid_body_a89aa6519b4a02da8f7e2064b2d99ac8f}{m\_Velocity}},\ \mbox{\hyperlink{class_rigid_body_ab4586c7a932ad9f48b260f505141f179}{m\_Accelaration}};\ \textcolor{comment}{//\ friction\ -\/\ the\ effect\ of\ something\ on\ the\ character\ (ice)}}
+\DoxyCodeLine{00056\ \};}
+
+\end{DoxyCode}

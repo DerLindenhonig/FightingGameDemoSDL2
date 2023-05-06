@@ -1,0 +1,73 @@
+\hypertarget{class_text}{}\doxysection{Text Class Reference}
+\label{class_text}\index{Text@{Text}}
+
+
+{\ttfamily \#include $<$Text.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_text_a204e244dfb6c119e6c80db9e5011f5db}{Text}} (SDL\+\_\+\+Renderer $\ast$renderer, const std\+::string \&font\+\_\+path, int font\+\_\+size, const std\+::string \&message\+\_\+text, const SDL\+\_\+\+Color \&color)
+\item 
+void \mbox{\hyperlink{class_text_af9adb2121ad725b9dc93d7d18b3ddf97}{Display}} (int x, int y, SDL\+\_\+\+Renderer $\ast$renderer) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{class_text_a3311598d9c84136470f29ffe8b637951}{load\+Font}} (SDL\+\_\+\+Renderer $\ast$renderer, const std\+::string \&font\+\_\+path, int font\+\_\+size, const std\+::string \&message\+\_\+text, const SDL\+\_\+\+Color \&color)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{class_text_accd0fd376702f2436809a7f4d3357631}{\+\_\+text\+\_\+texture}} = nullptr
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{class_text_ab0ff5dc378575b4df542e4b9c2336a5e}{\+\_\+text\+\_\+rect}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{class_text}{Text}} print text on the screen. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_text_a204e244dfb6c119e6c80db9e5011f5db}\label{class_text_a204e244dfb6c119e6c80db9e5011f5db}} 
+\index{Text@{Text}!Text@{Text}}
+\index{Text@{Text}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{Text()}{Text()}}
+{\footnotesize\ttfamily Text\+::\+Text (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{const std\+::string \&}]{font\+\_\+path,  }\item[{int}]{font\+\_\+size,  }\item[{const std\+::string \&}]{message\+\_\+text,  }\item[{const SDL\+\_\+\+Color \&}]{color }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_text_af9adb2121ad725b9dc93d7d18b3ddf97}\label{class_text_af9adb2121ad725b9dc93d7d18b3ddf97}} 
+\index{Text@{Text}!Display@{Display}}
+\index{Display@{Display}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{Display()}{Display()}}
+{\footnotesize\ttfamily void Text\+::\+Display (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_text_a3311598d9c84136470f29ffe8b637951}\label{class_text_a3311598d9c84136470f29ffe8b637951}} 
+\index{Text@{Text}!loadFont@{loadFont}}
+\index{loadFont@{loadFont}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{loadFont()}{loadFont()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture $\ast$ Text\+::load\+Font (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{const std\+::string \&}]{font\+\_\+path,  }\item[{int}]{font\+\_\+size,  }\item[{const std\+::string \&}]{message\+\_\+text,  }\item[{const SDL\+\_\+\+Color \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_text_ab0ff5dc378575b4df542e4b9c2336a5e}\label{class_text_ab0ff5dc378575b4df542e4b9c2336a5e}} 
+\index{Text@{Text}!\_text\_rect@{\_text\_rect}}
+\index{\_text\_rect@{\_text\_rect}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{\_text\_rect}{\_text\_rect}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Text\+::\+\_\+text\+\_\+rect\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_text_accd0fd376702f2436809a7f4d3357631}\label{class_text_accd0fd376702f2436809a7f4d3357631}} 
+\index{Text@{Text}!\_text\_texture@{\_text\_texture}}
+\index{\_text\_texture@{\_text\_texture}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{\_text\_texture}{\_text\_texture}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture$\ast$ Text\+::\+\_\+text\+\_\+texture = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_text_8h}{Text.\+h}}\item 
+\mbox{\hyperlink{_text_8cpp}{Text.\+cpp}}\end{DoxyCompactItemize}

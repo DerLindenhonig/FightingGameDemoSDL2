@@ -1,0 +1,106 @@
+\hypertarget{class_collision}{}\doxysection{Collision Class Reference}
+\label{class_collision}\index{Collision@{Collision}}
+
+
+{\ttfamily \#include $<$Collision.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_collision_ac723c6b57d19e5674e63a4344c4eb40f}{Check\+Collision}} (SDL\+\_\+\+Rect a, SDL\+\_\+\+Rect b)
+\item 
+bool \mbox{\hyperlink{class_collision_abb1c2fca138fd984dadc67426971ab86}{Ground\+Collision}} (SDL\+\_\+\+Rect a)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_collision}{Collision}} $\ast$ \mbox{\hyperlink{class_collision_a24db0ddca85b620d8d2fc2a1a82fca39}{Get\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_collision_a1c247612eae832108bf79b78127f35f3}{Collision}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_collider}{Collider}} $\ast$ \mbox{\hyperlink{class_collision_aabd154f3221b492b3a8a3874eb3be0e0}{m\+\_\+\+Ground\+Collider}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_collision}{Collision}} $\ast$ \mbox{\hyperlink{class_collision_afff9fe9ad8b9f2a7744e6d20f8d1787c}{s\+\_\+\+Instanse}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_collision_a1c247612eae832108bf79b78127f35f3}\label{class_collision_a1c247612eae832108bf79b78127f35f3}} 
+\index{Collision@{Collision}!Collision@{Collision}}
+\index{Collision@{Collision}!Collision@{Collision}}
+\doxysubsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily Collision\+::\+Collision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_collision_ac723c6b57d19e5674e63a4344c4eb40f}\label{class_collision_ac723c6b57d19e5674e63a4344c4eb40f}} 
+\index{Collision@{Collision}!CheckCollision@{CheckCollision}}
+\index{CheckCollision@{CheckCollision}!Collision@{Collision}}
+\doxysubsubsection{\texorpdfstring{CheckCollision()}{CheckCollision()}}
+{\footnotesize\ttfamily bool Collision\+::\+Check\+Collision (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Rect}]{a,  }\item[{SDL\+\_\+\+Rect}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_collision_a24db0ddca85b620d8d2fc2a1a82fca39}\label{class_collision_a24db0ddca85b620d8d2fc2a1a82fca39}} 
+\index{Collision@{Collision}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!Collision@{Collision}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_collision}{Collision}} $\ast$ Collision\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_collision_abb1c2fca138fd984dadc67426971ab86}\label{class_collision_abb1c2fca138fd984dadc67426971ab86}} 
+\index{Collision@{Collision}!GroundCollision@{GroundCollision}}
+\index{GroundCollision@{GroundCollision}!Collision@{Collision}}
+\doxysubsubsection{\texorpdfstring{GroundCollision()}{GroundCollision()}}
+{\footnotesize\ttfamily bool Collision\+::\+Ground\+Collision (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Rect}]{a }\end{DoxyParamCaption})}
+
+Checks if SDL\+\_\+\+Rect \char`\"{}a\char`\"{} touches ground.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_collision_aabd154f3221b492b3a8a3874eb3be0e0}\label{class_collision_aabd154f3221b492b3a8a3874eb3be0e0}} 
+\index{Collision@{Collision}!m\_GroundCollider@{m\_GroundCollider}}
+\index{m\_GroundCollider@{m\_GroundCollider}!Collision@{Collision}}
+\doxysubsubsection{\texorpdfstring{m\_GroundCollider}{m\_GroundCollider}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collider}{Collider}}$\ast$ Collision\+::m\+\_\+\+Ground\+Collider\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_collision_afff9fe9ad8b9f2a7744e6d20f8d1787c}\label{class_collision_afff9fe9ad8b9f2a7744e6d20f8d1787c}} 
+\index{Collision@{Collision}!s\_Instanse@{s\_Instanse}}
+\index{s\_Instanse@{s\_Instanse}!Collision@{Collision}}
+\doxysubsubsection{\texorpdfstring{s\_Instanse}{s\_Instanse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision}{Collision}} $\ast$ Collision\+::s\+\_\+\+Instanse = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Checks if SDL\+\_\+\+Rect \char`\"{}a\char`\"{} touches another SDL\+\_\+\+Rect \char`\"{}b\char`\"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_collision_8h}{Collision.\+h}}\item 
+\mbox{\hyperlink{_collision_8cpp}{Collision.\+cpp}}\end{DoxyCompactItemize}

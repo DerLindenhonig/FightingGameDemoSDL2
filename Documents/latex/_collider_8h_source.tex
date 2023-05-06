@@ -1,0 +1,35 @@
+\hypertarget{_collider_8h_source}{}\doxysection{Collider.\+h}
+\mbox{\hyperlink{_collider_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}SDL.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_collider}{Collider}}}
+\DoxyCodeLine{00006\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{inline}\ SDL\_Rect\ \mbox{\hyperlink{class_collider_a9d38db9dda4503317487b18f480b109c}{Get}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_collider_a101e48502a8a613197ddc3f52d4619b3}{m\_Box}};\ \}}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_collider_a7752a3cbe8271fd17b3aaa18b9f22ddf}{SetBuffer}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h)\ \textcolor{comment}{//\ function\ sets\ object\ collider\ (hitbox),\ if\ it\ changes\ during\ animation}}
+\DoxyCodeLine{00010\ \ \ \ \ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_collider_aa9bb92024b2b6d77c09c1e3cf29e9216}{m\_Buffer}}\ =\ \{\ x,y,w,h\ \};}
+\DoxyCodeLine{00012\ \ \ \ \ \}}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_collider_ad6e15d5a2900178851adeb3da80d33c7}{Set}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h)}
+\DoxyCodeLine{00014\ \ \ \ \ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*x\ =\ m\_Buffer.x;}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ \ \ \ \ \ \ \ y\ =\ m\_Buffer.y;}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ \ \ \ \ \ \ \ w\ =\ m\_Buffer.w;}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ \ \ \ \ \ \ \ h\ =\ m\_Buffer.h;*/}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_collider_a101e48502a8a613197ddc3f52d4619b3}{m\_Box}}\ =\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ x\ -\/\ \mbox{\hyperlink{class_collider_aa9bb92024b2b6d77c09c1e3cf29e9216}{m\_Buffer}}.x,}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ y\ -\/\ \mbox{\hyperlink{class_collider_aa9bb92024b2b6d77c09c1e3cf29e9216}{m\_Buffer}}.y,}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ w\ -\/\ \mbox{\hyperlink{class_collider_aa9bb92024b2b6d77c09c1e3cf29e9216}{m\_Buffer}}.w,}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ h\ -\/\ \mbox{\hyperlink{class_collider_aa9bb92024b2b6d77c09c1e3cf29e9216}{m\_Buffer}}.h}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00025\ \ \ \ \ \}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00028\ \ \ \ \ SDL\_Rect\ \mbox{\hyperlink{class_collider_a101e48502a8a613197ddc3f52d4619b3}{m\_Box}};}
+\DoxyCodeLine{00029\ \ \ \ \ SDL\_Rect\ \mbox{\hyperlink{class_collider_aa9bb92024b2b6d77c09c1e3cf29e9216}{m\_Buffer}};\ \textcolor{comment}{//\ increase\ space\ around\ sprite\ (for\ example:\ attack\ animation\ increase\ character\ hitbox/hurtbox)}}
+\DoxyCodeLine{00030\ \};}
+
+\end{DoxyCode}

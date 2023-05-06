@@ -1,0 +1,22 @@
+\hypertarget{_character_8h_source}{}\doxysection{Character.\+h}
+\mbox{\hyperlink{_character_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_game_object_8h}{GameObject.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_collider_8h}{Collider.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_character}{Character}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_game_object}{GameObject}}}
+\DoxyCodeLine{00008\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{comment}{//Character()\ \{\};}}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_character_ac746654b1e85993047237cf6eaea13c4}{Character}}(\mbox{\hyperlink{struct_properties}{Properties}}\ *p)\ :\ \mbox{\hyperlink{class_game_object}{GameObject}}(p)\ \{\}}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_a051c409115c689480f0246f6a4743474}{Draw}}()\ =\ 0;}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_ab451dcd45bff66126df9e017b536d1f4}{Update}}(\textcolor{keywordtype}{float}\ deltaTime,\ \mbox{\hyperlink{class_collider}{Collider}}*\ collider,\ \textcolor{keywordtype}{bool}\ isGotHit,\ \textcolor{keywordtype}{int}\ health)\ =\ 0;}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_a62b6a8b166efc927557f4dab7aaa75b2}{Clean}}()\ =\ 0;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00016\ \ \ \ \ std::string\ \mbox{\hyperlink{class_character_a64ee7d0f72dd1fcb70e7be3a5d421df3}{n\_Name}};}
+\DoxyCodeLine{00017\ \};}
+
+\end{DoxyCode}

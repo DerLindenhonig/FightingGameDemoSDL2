@@ -1,0 +1,30 @@
+\hypertarget{_input_handler_8h_source}{}\doxysection{Input\+Handler.\+h}
+\mbox{\hyperlink{_input_handler_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}SDL.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{_input_handler_8h_ac79c9040b19c90137f1ae7604877f1d8}{AXIS}}\ \{\mbox{\hyperlink{_input_handler_8h_ac79c9040b19c90137f1ae7604877f1d8a4dd51ad73508d6fc83a502966779e48e}{HORIZONTAL}},\ \mbox{\hyperlink{_input_handler_8h_ac79c9040b19c90137f1ae7604877f1d8a1a88641fcd39f2ed3e58a18526e97138}{VERTICAL}}\};}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_input_handler}{InputHandler}}}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_input_handler}{InputHandler}}*\ \mbox{\hyperlink{class_input_handler_a99a2891c421e523e410d2893e9c0a497}{GetInstance}}()\ \ \ \ \textcolor{comment}{//\ gives\ access\ to\ the\ class,\ returns\ instance\ of\ this\ class}}
+\DoxyCodeLine{00014\ \ \ \ \ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{comment}{//if\ already\ created\ -\/>\ return\ instance,\ if\ not\ -\/>\ create\ instance}}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_input_handler_a7d30a1c0ae177b6fc2f99c9900780e7f}{s\_Instanse}}\ =\ (\mbox{\hyperlink{class_input_handler_a7d30a1c0ae177b6fc2f99c9900780e7f}{s\_Instanse}}\ !=\ \textcolor{keyword}{nullptr})\ ?\ \mbox{\hyperlink{class_input_handler_a7d30a1c0ae177b6fc2f99c9900780e7f}{s\_Instanse}}\ :\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_input_handler_a698aa4af4f326a9881835fda251ca996}{InputHandler}}();}
+\DoxyCodeLine{00017\ \ \ \ \ \}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_input_handler_a1587ef959cf2178db7a0ceac392bd400}{Listen}}();}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_input_handler_a657e171f0e6d2c5ae9fd4423006b470b}{GetKeyDown}}(SDL\_Scancode\ key);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_input_handler_a9c6f373fa417acca3dcd5e78538e20d0}{GetAxisKey}}(\mbox{\hyperlink{_input_handler_8h_ac79c9040b19c90137f1ae7604877f1d8}{AXIS}}\ axis);}
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_input_handler_a698aa4af4f326a9881835fda251ca996}{InputHandler}}();}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_input_handler_ac1f7efb54b34d433d6ffba62627452b6}{\string~InputHandler}}()\ \{\};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_input_handler}{InputHandler}}*\ \mbox{\hyperlink{class_input_handler_a7d30a1c0ae177b6fc2f99c9900780e7f}{s\_Instanse}};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_input_handler_aeeb7b74749551931929b67b69b65de87}{KeyUp}}();}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_input_handler_a2ecd908fca7e68bac602cd0bdf45b5d3}{KeyDown}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{const}\ Uint8*\ \mbox{\hyperlink{class_input_handler_a5e1001d9bfcdae02703e26f24aaf366f}{m\_KeyStates}};\ \textcolor{comment}{//\ Array\ stores\ key\ values.\ 1\ =\ key\ was\ pressed,\ 0\ =\ no.\ }}
+\DoxyCodeLine{00028\ \};}
+\DoxyCodeLine{00029\ }
+
+\end{DoxyCode}

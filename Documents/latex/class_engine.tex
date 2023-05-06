@@ -1,0 +1,199 @@
+\hypertarget{class_engine}{}\doxysection{Engine Class Reference}
+\label{class_engine}\index{Engine@{Engine}}
+
+
+{\ttfamily \#include $<$Engine.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_engine_ac84eefe06226f430a2448306e6fd2579}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_engine_acde70aed0043e2e2091d0bb6cce8e3c1}{Render}} ()
+\item 
+void \mbox{\hyperlink{class_engine_afd40a68f30c22a1c637e4a63a1693d46}{Events}} ()
+\item 
+bool \mbox{\hyperlink{class_engine_a6b6c40708fed3afad5dd5665a02903ba}{Init}} ()
+\item 
+bool \mbox{\hyperlink{class_engine_a6ec0c16dd87b0153094138c7a3a54ff7}{Clean}} ()
+\item 
+void \mbox{\hyperlink{class_engine_ac703279e3531bc1e668115affceb8c37}{Quit}} ()
+\item 
+bool \mbox{\hyperlink{class_engine_a0b99e6008605c0d0f27a1829074aaf07}{is\+Running}} ()
+\item 
+SDL\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{class_engine_a330c2d65ac564239be85bf0c9210de27}{Get\+Renderer}} ()
+\item 
+bool \mbox{\hyperlink{class_engine_ae9345782cfeae71c1cd8b4045f5a424c}{is\+Game\+Ended}} ()
+\item 
+std\+::string \mbox{\hyperlink{class_engine_a7d620d65239ab7e23131ccd0de5300fe}{Get\+Win\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_engine}{Engine}} $\ast$ \mbox{\hyperlink{class_engine_a2146785b1df88f59838cab30aabc8d37}{Get\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_engine_acc713c22e0940be92b1251a916849077}{Engine}} ()=default
+\item 
+\mbox{\hyperlink{class_engine_a8ef7030a089ecb30bbfcb9e43094717a}{$\sim$\+Engine}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_engine_a692f67b6f589550145c431efb8f79540}{m\+\_\+\+Is\+Running}}
+\item 
+SDL\+\_\+\+Window $\ast$ \mbox{\hyperlink{class_engine_afd376b0313608f84c1750620d7f3d5a6}{m\+\_\+\+Window}}
+\item 
+SDL\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{class_engine_a6534016b707af32afeb5ccad7799a9fa}{m\+\_\+\+Renderer}}
+\item 
+float \mbox{\hyperlink{class_engine_a388d933cc594f82c2090ce6b54ee86fc}{m\+\_\+\+Delta\+Time}}
+\item 
+bool \mbox{\hyperlink{class_engine_ac887a451ae36b0157d3685353fb5df4f}{m\+\_\+\+Is\+Game\+Ended}}
+\item 
+std\+::string \mbox{\hyperlink{class_engine_a823e0d3e962ced05e1ea18a08362b1aa}{m\+\_\+\+Win\+String}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_engine}{Engine}} $\ast$ \mbox{\hyperlink{class_engine_a54b18e6ded8d8aef1d78e36ee1a28758}{s\+\_\+\+Instanse}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_engine}{Engine}} class. Singelton class, can be only one \mbox{\hyperlink{class_engine}{Engine}} at the same time. Class makes game loop for handling all game events. Updates. Checks if there was any event happening. Render. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_engine_acc713c22e0940be92b1251a916849077}\label{class_engine_acc713c22e0940be92b1251a916849077}} 
+\index{Engine@{Engine}!Engine@{Engine}}
+\index{Engine@{Engine}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Engine()}{Engine()}}
+{\footnotesize\ttfamily Engine\+::\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_engine_a8ef7030a089ecb30bbfcb9e43094717a}\label{class_engine_a8ef7030a089ecb30bbfcb9e43094717a}} 
+\index{Engine@{Engine}!````~Engine@{$\sim$Engine}}
+\index{````~Engine@{$\sim$Engine}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{$\sim$Engine()}{~Engine()}}
+{\footnotesize\ttfamily Engine\+::$\sim$\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_engine_a6ec0c16dd87b0153094138c7a3a54ff7}\label{class_engine_a6ec0c16dd87b0153094138c7a3a54ff7}} 
+\index{Engine@{Engine}!Clean@{Clean}}
+\index{Clean@{Clean}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Clean()}{Clean()}}
+{\footnotesize\ttfamily bool Engine\+::\+Clean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_engine_afd40a68f30c22a1c637e4a63a1693d46}\label{class_engine_afd40a68f30c22a1c637e4a63a1693d46}} 
+\index{Engine@{Engine}!Events@{Events}}
+\index{Events@{Events}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Events()}{Events()}}
+{\footnotesize\ttfamily void Engine\+::\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_engine_a2146785b1df88f59838cab30aabc8d37}\label{class_engine_a2146785b1df88f59838cab30aabc8d37}} 
+\index{Engine@{Engine}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_engine}{Engine}} $\ast$ Engine\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_engine_a330c2d65ac564239be85bf0c9210de27}\label{class_engine_a330c2d65ac564239be85bf0c9210de27}} 
+\index{Engine@{Engine}!GetRenderer@{GetRenderer}}
+\index{GetRenderer@{GetRenderer}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{GetRenderer()}{GetRenderer()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Renderer $\ast$ Engine\+::\+Get\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_engine_a7d620d65239ab7e23131ccd0de5300fe}\label{class_engine_a7d620d65239ab7e23131ccd0de5300fe}} 
+\index{Engine@{Engine}!GetWinString@{GetWinString}}
+\index{GetWinString@{GetWinString}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{GetWinString()}{GetWinString()}}
+{\footnotesize\ttfamily std\+::string Engine\+::\+Get\+Win\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_engine_a6b6c40708fed3afad5dd5665a02903ba}\label{class_engine_a6b6c40708fed3afad5dd5665a02903ba}} 
+\index{Engine@{Engine}!Init@{Init}}
+\index{Init@{Init}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool Engine\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_engine_ae9345782cfeae71c1cd8b4045f5a424c}\label{class_engine_ae9345782cfeae71c1cd8b4045f5a424c}} 
+\index{Engine@{Engine}!isGameEnded@{isGameEnded}}
+\index{isGameEnded@{isGameEnded}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{isGameEnded()}{isGameEnded()}}
+{\footnotesize\ttfamily bool Engine\+::is\+Game\+Ended (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_engine_a0b99e6008605c0d0f27a1829074aaf07}\label{class_engine_a0b99e6008605c0d0f27a1829074aaf07}} 
+\index{Engine@{Engine}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{isRunning()}{isRunning()}}
+{\footnotesize\ttfamily bool Engine\+::is\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_engine_ac703279e3531bc1e668115affceb8c37}\label{class_engine_ac703279e3531bc1e668115affceb8c37}} 
+\index{Engine@{Engine}!Quit@{Quit}}
+\index{Quit@{Quit}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Quit()}{Quit()}}
+{\footnotesize\ttfamily void Engine\+::\+Quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_engine_acde70aed0043e2e2091d0bb6cce8e3c1}\label{class_engine_acde70aed0043e2e2091d0bb6cce8e3c1}} 
+\index{Engine@{Engine}!Render@{Render}}
+\index{Render@{Render}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Engine\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_engine_ac84eefe06226f430a2448306e6fd2579}\label{class_engine_ac84eefe06226f430a2448306e6fd2579}} 
+\index{Engine@{Engine}!Update@{Update}}
+\index{Update@{Update}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Engine\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_engine_a388d933cc594f82c2090ce6b54ee86fc}\label{class_engine_a388d933cc594f82c2090ce6b54ee86fc}} 
+\index{Engine@{Engine}!m\_DeltaTime@{m\_DeltaTime}}
+\index{m\_DeltaTime@{m\_DeltaTime}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{m\_DeltaTime}{m\_DeltaTime}}
+{\footnotesize\ttfamily float Engine\+::m\+\_\+\+Delta\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_engine_ac887a451ae36b0157d3685353fb5df4f}\label{class_engine_ac887a451ae36b0157d3685353fb5df4f}} 
+\index{Engine@{Engine}!m\_IsGameEnded@{m\_IsGameEnded}}
+\index{m\_IsGameEnded@{m\_IsGameEnded}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{m\_IsGameEnded}{m\_IsGameEnded}}
+{\footnotesize\ttfamily bool Engine\+::m\+\_\+\+Is\+Game\+Ended\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_engine_a692f67b6f589550145c431efb8f79540}\label{class_engine_a692f67b6f589550145c431efb8f79540}} 
+\index{Engine@{Engine}!m\_IsRunning@{m\_IsRunning}}
+\index{m\_IsRunning@{m\_IsRunning}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{m\_IsRunning}{m\_IsRunning}}
+{\footnotesize\ttfamily bool Engine\+::m\+\_\+\+Is\+Running\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_engine_a6534016b707af32afeb5ccad7799a9fa}\label{class_engine_a6534016b707af32afeb5ccad7799a9fa}} 
+\index{Engine@{Engine}!m\_Renderer@{m\_Renderer}}
+\index{m\_Renderer@{m\_Renderer}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{m\_Renderer}{m\_Renderer}}
+{\footnotesize\ttfamily SDL\+\_\+\+Renderer$\ast$ Engine\+::m\+\_\+\+Renderer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_engine_afd376b0313608f84c1750620d7f3d5a6}\label{class_engine_afd376b0313608f84c1750620d7f3d5a6}} 
+\index{Engine@{Engine}!m\_Window@{m\_Window}}
+\index{m\_Window@{m\_Window}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{m\_Window}{m\_Window}}
+{\footnotesize\ttfamily SDL\+\_\+\+Window$\ast$ Engine\+::m\+\_\+\+Window\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_engine_a823e0d3e962ced05e1ea18a08362b1aa}\label{class_engine_a823e0d3e962ced05e1ea18a08362b1aa}} 
+\index{Engine@{Engine}!m\_WinString@{m\_WinString}}
+\index{m\_WinString@{m\_WinString}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{m\_WinString}{m\_WinString}}
+{\footnotesize\ttfamily std\+::string Engine\+::m\+\_\+\+Win\+String\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_engine_a54b18e6ded8d8aef1d78e36ee1a28758}\label{class_engine_a54b18e6ded8d8aef1d78e36ee1a28758}} 
+\index{Engine@{Engine}!s\_Instanse@{s\_Instanse}}
+\index{s\_Instanse@{s\_Instanse}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{s\_Instanse}{s\_Instanse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_engine}{Engine}} $\ast$ Engine\+::s\+\_\+\+Instanse = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_engine_8h}{Engine.\+h}}\item 
+\mbox{\hyperlink{_engine_8cpp}{Engine.\+cpp}}\end{DoxyCompactItemize}
