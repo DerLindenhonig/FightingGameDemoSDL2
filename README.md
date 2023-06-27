@@ -3,9 +3,20 @@
 Yksinkertainen tappelupeli.
 
 Ensimmäinen pelaaja: wasd - liikkuminen, q - hyökkäys.
+
 Toinen pelaaja: nuolet - liikkuminen, m - hyökkäys.
 
 Pelin ottelu kestää 15 sekuntia.
+
+-----------------------------------------------------
+
+A simple fighting game.
+
+First player: wasd - movement, q - attacking. 
+
+Second player: arrows - movement, m - attacking.
+
+The match of the game lasts 15 seconds.
 
 
 
