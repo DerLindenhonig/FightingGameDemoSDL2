@@ -7,4 +7,11 @@ Toinen pelaaja: nuolet - liikkuminen, m - hyökkäys.
 
 Pelin ottelu kestää 15 sekuntia.
 
-https://github.com/DerLindenhonig/FightingGameDemoSDL2/assets/79135600/3e66331b-042f-4a13-9a5b-d1496e90807b
+
+
+https://github.com/DerLindenhonig/FightingGameDemoSDL2/assets/79135600/097c5047-eb24-4160-b8a3-3273799516dd
+
+
+
+https://github.com/DerLindenhonig/FightingGameDemoSDL2/assets/79135600/b6b3283d-a61a-418c-a860-419a904fee09
+
