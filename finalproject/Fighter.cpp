@@ -54,7 +54,6 @@ void Fighter::Update(float deltaTime, Collider* collider, bool isGotHit, int hea
 	m_IsGoingBackward = false;
 	m_IsCrouching = false;
 
-	//m_Animation->SetProps(m_TextureID, 0, 2, 100/*, SDL_FLIP_HORIZONTAL*/); 
 	m_RigitBody->UnsetForce(); // don't move
 
 	if (m_Side == 0 && !m_IsKO) 
@@ -171,7 +170,6 @@ void Fighter::Update(float deltaTime, Collider* collider, bool isGotHit, int hea
 			if (m_IsAttacking)
 			{
 				SetIsHitted(true);
-				//std::cout << "P1 hitted! m_IsHitted: " << m_IsHitted << ", isGotHit: " << isGotHit << "\n";
 			}
 		}
 	}
@@ -233,11 +231,9 @@ void Fighter::Update(float deltaTime, Collider* collider, bool isGotHit, int hea
 		if (m_IsAttacking && m_AttackTime > 0)
 		{
 			m_AttackTime -= deltaTime;
-			/*if (ok == false) { m_Health = m_Health - 10; ok = true; }*/
 		}
 		else
 		{
-			//ok = false;
 			m_IsAttacking = false;
 			m_Collider->SetBuffer(-50, -10, 130, 10);
 			m_AttackTime = ATTACK_TIME;
@@ -294,7 +290,6 @@ void Fighter::Update(float deltaTime, Collider* collider, bool isGotHit, int hea
 			if (m_IsAttacking) 
 			{  
 				SetIsHitted(true);
-				//std::cout << "P2 hitted! m_IsHitted: " << m_IsHitted << ", isGotHit: " << isGotHit << "\n";
 			}
 		}
 	}
